@@ -9,13 +9,17 @@ import java.util.Locale;
  */
 public class MainPruebaIndividual {
 
+	/**
+	 * methodo static que cambia convierte int a String formato peso chileno
+	 * @param precio
+	 * @return
+	 */
 	static String convertirAPesos(int precio) {
 		Locale local = new Locale("es", "CL"); 
 		NumberFormat formatomoneda  = NumberFormat.getCurrencyInstance(local);
 		
 		return formatomoneda.format(precio).replace("Ch",""); 
 	}
-	
 	
 	/**
 	 * Main class donde se ejecutan las clases
