@@ -11,7 +11,7 @@ public class Lavadora extends Electrodomestico {
 	public  String color = "blanco";
 	
 	/**
-	 * 
+	 * Constructor por defecto
 	 */
 	public Lavadora() {
 		super();
@@ -19,6 +19,7 @@ public class Lavadora extends Electrodomestico {
 	}
 
 	/**
+	 * Cosntructor con precio y peso como parametros
 	 * @param peso
 	 * @param precio
 	 */
@@ -28,11 +29,12 @@ public class Lavadora extends Electrodomestico {
 	}
 	
 	/**
+	 * contructor con todos los parametros
 	 * @param consumoenergetico
 	 * @param color
 	 * @param peso
 	 * @param precio
-	 * @param  
+	 * @param carga
 	 */
 	public Lavadora(char consumoenergetico, String color, int peso, int precio, int carga  ) {
 		super(consumoenergetico, color, peso, precio);
@@ -59,7 +61,5 @@ public class Lavadora extends Electrodomestico {
 		}
 		
 		return  preciosobrecarga; 
-		
 	}
-
 }

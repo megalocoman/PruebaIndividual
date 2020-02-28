@@ -11,7 +11,7 @@ import java.util.Locale;
 public class MainPruebaIndividual {
 
 	/**
-	 * metodo static que cambia convierte int a String formato peso chileno
+	 * metodo static que convierte int a String formato peso chileno
 	 * @param precio
 	 * @return
 	 */

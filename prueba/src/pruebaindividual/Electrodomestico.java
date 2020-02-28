@@ -29,7 +29,7 @@ public class Electrodomestico {
 	}
 	
 	/**
-	 * constructor con parametros
+	 * constructor con parametros precio y peso
 	 * @param peso tamaño propio del objeto
 	 * @param precio precio final
 	 */
@@ -58,7 +58,6 @@ public class Electrodomestico {
 	
 	}
 
-
 	/**
 	 * @return retorna consumoenergetico
 	 */
@@ -67,7 +66,8 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * @param consumoenergetico setea consumoenergetico 
+	 * coloca fija 
+	 * @param consumoenergetico 
 	 */
 	public void setConsumoenergetico(char consumoenergetico) {
 		this.consumoenergetico = consumoenergetico;
@@ -81,7 +81,8 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * @param pESOBASE setea pESOBASE 
+	 * fija pESOBASE 
+	 * @param pESOBASE 
 	 */
 	public  void setPESOBASE(int pESOBASE) {
 		PESOBASE = pESOBASE;
@@ -95,7 +96,7 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * @param color setea color 
+	 * @param color fija color 
 	 */
 	public void setColor(String color) {
 		this.color = color;
@@ -109,7 +110,7 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * @param peso setea peso 
+	 * @param peso fija peso 
 	 */
 	public void setPeso(int peso) {
 		this.peso = peso;
