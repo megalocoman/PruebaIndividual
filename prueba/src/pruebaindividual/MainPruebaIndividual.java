@@ -1,5 +1,7 @@
 package pruebaindividual;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * @author Alumno
@@ -7,6 +9,14 @@ package pruebaindividual;
  */
 public class MainPruebaIndividual {
 
+	static String convertirAPesos(int precio) {
+		Locale local = new Locale("es", "CL"); 
+		NumberFormat formatomoneda  = NumberFormat.getCurrencyInstance(local);
+		
+		return formatomoneda.format(precio).replace("Ch",""); 
+	}
+	
+	
 	/**
 	 * Main class donde se ejecutan las clases
 	 * @param args
@@ -29,6 +39,7 @@ public class MainPruebaIndividual {
 		
 		
 		
+		
 		Electrodomestico arrayelectrodomesticos[] = {E1, E2, E3, E4, T1, T2, T3, L1, L2, L3};
 		System.out.println("*************************************************************************");
 		System.out.println("Bienvenido a Cocilamp");
@@ -39,22 +50,22 @@ public class MainPruebaIndividual {
 		for ( int i = 0; i <arrayelectrodomesticos.length; i++) {
 			if (arrayelectrodomesticos[i] instanceof Television ) {
 				preciototal+= arrayelectrodomesticos[i].getPrecioFinal();
-				System.out.println("Televisor precio individual: "+ arrayelectrodomesticos[i].getPrecioFinal()+
-						" precio total: "+ preciototal);
+				System.out.println("Televisor precio individual: "+ convertirAPesos(arrayelectrodomesticos[i].getPrecioFinal())+
+						" precio total: "+ convertirAPesos(preciototal));
 			}
 			else if(arrayelectrodomesticos[i] instanceof Lavadora) {
 				preciototal+= arrayelectrodomesticos[i].getPrecioFinal();
-				System.out.println("Lavadora precio individual: "+ arrayelectrodomesticos[i].getPrecioFinal()+
-						" precio total: "+ preciototal);
+				System.out.println("Lavadora precio individual: "+ convertirAPesos(arrayelectrodomesticos[i].getPrecioFinal())+
+						" precio total: "+ convertirAPesos(preciototal));
 			}
 			else {
 				preciototal+= arrayelectrodomesticos[i].getPrecioFinal();
-				System.out.println("Electrodomestico generico precio individual: "+ arrayelectrodomesticos[i].getPrecioFinal()+
-						" precio parcial: "+ preciototal);
+				System.out.println("Electrodomestico generico precio individual: "+ convertirAPesos(arrayelectrodomesticos[i].getPrecioFinal())+
+						" precio parcial: "+ convertirAPesos(preciototal));
 			}
 		}
 		System.out.println("*************************************************************************");
-		System.out.println("valor total: "+preciototal);	
+		System.out.println("valor total: "+convertirAPesos(preciototal));	
 		System.out.println("*************************************************************************");
 	}
 }
