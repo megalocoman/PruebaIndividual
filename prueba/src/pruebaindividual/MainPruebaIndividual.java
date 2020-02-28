@@ -31,7 +31,9 @@ public class MainPruebaIndividual {
 		
 		Electrodomestico arrayelectrodomesticos[] = {E1, E2, E3, E4, T1, T2, T3, L1, L2, L3};
 		System.out.println("*************************************************************************");
-		
+		System.out.println("Bienvenido a Cocilamp");
+		System.out.println("Lista de productos y precios");
+		System.out.println("*************************************************************************");
 		int preciototal = 0;
 		
 		for ( int i = 0; i <arrayelectrodomesticos.length; i++) {
@@ -52,6 +54,7 @@ public class MainPruebaIndividual {
 			}
 		}
 		System.out.println("*************************************************************************");
-		System.out.println("valor total: "+preciototal);		
+		System.out.println("valor total: "+preciototal);	
+		System.out.println("*************************************************************************");
 	}
 }
