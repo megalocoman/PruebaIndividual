@@ -2,7 +2,7 @@ package pruebaindividual;
 /**
  * Subclase lavadora, modifica precio si carga es mayor a 30 kg.
  * 
- * @author Alumno
+ * @author Cristian Jofre
  *
  */
 public class Lavadora extends Electrodomestico {

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * superclase electrodomesticos
- * @author Alumno
+ * @author Cristian Jofre
  *
  */
 public class Electrodomestico {

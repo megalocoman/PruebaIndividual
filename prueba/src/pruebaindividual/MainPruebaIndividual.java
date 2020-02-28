@@ -4,13 +4,14 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 /**
- * @author Alumno
+ * Main class donde se ejecutan el programa
+ * @author Cristian Jofre
  *
  */
 public class MainPruebaIndividual {
 
 	/**
-	 * methodo static que cambia convierte int a String formato peso chileno
+	 * metodo static que cambia convierte int a String formato peso chileno
 	 * @param precio
 	 * @return
 	 */
@@ -22,7 +23,7 @@ public class MainPruebaIndividual {
 	}
 	
 	/**
-	 * Main class donde se ejecutan las clases
+	 * metodo main
 	 * @param args
 	 */
 

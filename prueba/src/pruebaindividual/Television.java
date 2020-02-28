@@ -4,7 +4,7 @@ package pruebaindividual;
  * subclase televisor, modifica precio dependiendo del tamaño de la pantalla 
  * y sintonizador TDT 
  * 
- * @author Alumno
+ * @author Cristian Jofre
  *
  */
 public class Television extends Electrodomestico {
